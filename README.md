@@ -1,11 +1,11 @@
 [README.md](https://github.com/user-attachments/files/26986259/README.md)
-# 🏥 Healthcare Data Migration Project
+# Healthcare Data Migration Project
 
 > **Simulated enterprise-grade ETL pipeline** migrating patient records from a legacy EHR system to a new platform — with full data cleaning, transformation, field mapping, and validation reporting.
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 This project simulates a real-world healthcare data migration engagement. The scenario involves extracting 95 patient records from **LegacyEHR v3.2**, identifying and resolving multiple data quality issues, and loading 80 clean, standardized records into **NewEHR v1.0** — with a complete audit trail and data quality report.
 
@@ -19,7 +19,7 @@ The pipeline is intentionally designed to reflect common challenges found in pro
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 healthcare-migration/
@@ -45,7 +45,7 @@ healthcare-migration/
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 | Layer | Tool |
 |---|---|
@@ -57,7 +57,7 @@ healthcare-migration/
 
 ---
 
-## 🔍 Dataset Details
+## Dataset Details
 
 ### Legacy System Fields (Source)
 
@@ -90,7 +90,7 @@ healthcare-migration/
 
 ---
 
-## 🔄 Field Mapping (Legacy → New System)
+## Field Mapping (Legacy → New System)
 
 | Legacy Field | New Field | Transformation Applied |
 |---|---|---|
@@ -110,7 +110,7 @@ healthcare-migration/
 
 ---
 
-## 🧹 Cleaning & Transformation Steps
+## Cleaning & Transformation Steps
 
 ### Step 1 — Name Normalization
 All names converted to **"First Last" title case**.  
@@ -151,7 +151,7 @@ Legacy fields renamed to new system schema. Three synthetic fields added:
 
 ---
 
-## ✅ Data Validation Report
+## Data Validation Report
 
 | Metric | Value |
 |---|---|
@@ -169,7 +169,7 @@ Legacy fields renamed to new system schema. Three synthetic fields added:
 
 ---
 
-## ⚠️ Key Challenges
+## Key Challenges
 
 **1. Inconsistent date formats across the same column**  
 The legacy `dob` column stored dates in at least three different formats with no schema enforcement. Solution: multi-format parser with ordered fallback attempts.
@@ -185,7 +185,7 @@ Two legacy departments used different conventions: one used "First Last" while a
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 # 1. Install dependencies
@@ -206,7 +206,7 @@ SQL DDL and validation queries are in `sql/migration_queries.sql`.
 
 ---
 
-## 📊 Final Results
+## Final Results
 
 | | Before | After |
 |---|---|---|
@@ -220,7 +220,7 @@ SQL DDL and validation queries are in `sql/migration_queries.sql`.
 
 ---
 
-## 📄 License
+## License
 
 This project uses synthetic, generated data only. No real patient information is included. For portfolio and demonstration purposes.
 
